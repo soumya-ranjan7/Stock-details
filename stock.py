@@ -14,7 +14,7 @@ def my_form_post():
 
     text = request.form['text']
     new_text = text.upper()
-    return render_template("StockInfo.html",)
+    return render_template("StockInfo.html")
 
 if __name__ == '__main__':
     app.run(debug=True)
