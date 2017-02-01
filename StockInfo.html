@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>Information About the Stock</title>
+</head>
+
+<body>
+<h1></h1>
+{% for key,value in details.items() %}
+<p>{{ key }} - {{ value["target"] }} </p>
+{% endfor %}
+</body>
+</html>
