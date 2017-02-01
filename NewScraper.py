@@ -19,7 +19,7 @@ info=data['data']
 info1 = info[0]
 
     
-    
+Last_price = info1["lastPrice"]    
 
 PreviousDay_Closing_price = info1["previousClose"]
     
@@ -33,4 +33,6 @@ Closing_price = info1["closePrice"]
     
 
 Percentage_change = info1["pChange"]
+
+stock_details=[Last_price , PreviousDay_Closing_price , Opening_price , Highest_of_day , Lowest_of_day , Closing_price , Percentage_change ] 
    
