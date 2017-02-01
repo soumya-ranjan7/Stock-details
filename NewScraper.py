@@ -13,12 +13,11 @@ soup = BeautifulSoup(plain_text,"html.parser")
 
 
  
-for p in soup.find('div',{'id':'responseDiv'}):                             #scraping values 
-    s=p.strip(' ')
-    data=json.loads(s)
-    info=data['data']
-    info1=info[0]
-    print(info1)
+p  = soup.find('div',{'id':'responseDiv'})                             #scraping values 
+data = json.loads(p.string)
+info=data['data']
+info1 = info[0]
+
     
     
 
