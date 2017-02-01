@@ -18,6 +18,7 @@ for p in soup.find('div',{'id':'responseDiv'}):                             #scr
     data=json.loads(s)
     info=data['data']
     info1=info[0]
+    print(info1)
     
     
 
@@ -25,11 +26,12 @@ PreviousDay_Closing_price = info1["previousClose"]
     
 Opening_price = info1["open"]
 
-Highest_of_day = info1["dayHigh]
+Highest_of_day = info1["dayHigh"]
 
 Lowest_of_day = info1["dayLow"]
 
-Closing_price = info1[closePrice]
+Closing_price = info1["closePrice"]
     
-Percentage_change = info1[pChange]
+
+Percentage_change = info1["pChange"]
    
