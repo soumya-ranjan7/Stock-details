@@ -39,7 +39,7 @@ def my_form_post():
     Closing_price = info1["closePrice"]
     Percentage_change = info1["pChange"]
     
-    stock_details={"Last price "Last_price:, "PreviousDay Closing price":PreviousDay_Closing_price , "Opening price"Opening_price : , "Highest of day":Highest_of_day
+    stock_details={"Last price ":Last_price, "PreviousDay Closing price":PreviousDay_Closing_price , "Opening price"Opening_price : , "Highest of day":Highest_of_day
                    , "Lowest of day ":Lowest_of_day, "Closing price":Closing_price , "Percentage change":Percentage_change}
        
     return render_template("StockInfo.html",details=stock_details)
@@ -49,7 +49,3 @@ def my_form_post():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-
-
-
