@@ -1,12 +1,31 @@
 <html>
 <head>
-<title>Information About the Stock</title>
+	<title>Information About the Stock</title>
+	<style type="text/css">
+		body{
+			background: black;
+			color: cyan;
+	
+		.style_1{
+			
+			text-align: center;
+			margin: 0 auto;
+			width: 500px;
+			padding-top: 10%;
+			font-size:150%;
+			font-family:"Times New roman",Times,serif;
+			line-height: 200%;
+		}
+	</style>
 </head>
 
 <body>
-<h1></h1>
+<div class="style_1">
+<h1>Details of the stock {{stock-name}}</h1>
 {% for key,value in details.items() %}
-<p>{{ key }} - {{ value }} </p>
+  <p>{{ key }} - <span style="color:white">{{ value }} </span></p>
 {% endfor %}
+
+</div>
 </body>
 </html>
